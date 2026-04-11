@@ -31,8 +31,6 @@ services:
       - "4096:4096"
     volumes:
       - ./workspace:/root/workspace
-      - opencode-data:/root/.local/share/opencode
-      - opencode-config:/root/.config/opencode
-volumes:
-  opencode-data:
-  opencode-config:
+      - ./opencode-data:/root/.local/share/opencode
+      - ./opencode-config:/root/.config/opencode
+      - ./opencode-settings:/root/.opencode
